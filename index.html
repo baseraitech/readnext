@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadNext - Organize Your Reading Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo.svg" alt="ReadNext Logo">
+                    <span>ReadNext</span>
+                </div>
+                <button class="lang-switch" onclick="toggleLanguage()">Switch to Türkçe</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 lang="en">Read What's Next</h1>
+            <h1 lang="tr">Bir Sonrakini Oku</h1>
+            
+            <p lang="en">Capture reading inspiration from social media, organize your library, and never lose a book recommendation again.</p>
+            <p lang="tr">Sosyal medyadaki kitap önerilerini anında yakalayın, kütüphanenizi düzenleyin ve bir daha asla bir tavsiyeyi unutmayın.</p>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="feature-card">
+                <h3 lang="en">Smart Capture</h3>
+                <h3 lang="tr">Akıllı Yakalama</h3>
+                <p lang="en">Share links directly from social media. Our AI handles the metadata.</p>
+                <p lang="tr">Sosyal medyadan bağlantıları doğrudan paylaşın. Detayları biz hallederiz.</p>
+            </div>
+            <div class="feature-card">
+                <h3 lang="en">Reading Alarms</h3>
+                <h3 lang="tr">Okuma Alarmları</h3>
+                <p lang="en">Set custom reminders to build your perfect reading habit.</p>
+                <p lang="tr">Mükemmel bir okuma alışkanlığı kazanmak için hatırlatıcılar kurun.</p>
+            </div>
+            <div class="feature-card">
+                <h3 lang="en">Export PDF</h3>
+                <h3 lang="tr">PDF Dışa Aktar</h3>
+                <p lang="en">Take your list with you or share it with friends in professional PDF format.</p>
+                <p lang="tr">Listenizi yanınızda taşıyın veya profesyonel PDF formatında paylaşın.</p>
+            </div>
+        </section>
+
+        <!-- Privacy Policy -->
+        <section id="privacy" class="legal-content">
+            <div lang="en">
+                <h2>Privacy Policy</h2>
+                <p>Last updated: April 9, 2026</p>
+                <p>ReadNext ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect and use information.</p>
+                
+                <h3>1. Information Collection</h3>
+                <p>We do not collect any personal data. All your book data, notes, and progress are stored locally on your device.</p>
+                
+                <h3>2. Third-Party Services</h3>
+                <p>We use Google AdMob for advertising and Google Books API for fetching book details. These services may collect device identifiers and usage data according to their own policies.</p>
+                
+                <h3>3. Data Security</h3>
+                <p>Since your data is stored locally, it is as secure as your device. We provide manual backup/restore via JSON files which you control.</p>
+            </div>
+
+            <div lang="tr">
+                <h2>Gizlilik Politikası</h2>
+                <p>Son güncelleme: 9 Nisan 2026</p>
+                <p>ReadNext ("biz", "bize" veya "bizim"), gizliliğinizi korumayı taahhüt eder. Bu Gizlilik Politikası, bilgileri nasıl topladığımızı ve kullandığımızı açıklar.</p>
+                
+                <h3>1. Bilgi Toplama</h3>
+                <p>Herhangi bir kişisel veri toplamıyoruz. Tüm kitap verileriniz, notlarınız ve ilerlemeniz yerel olarak cihazınızda saklanır.</p>
+                
+                <h3>2. Üçüncü Taraf Hizmetleri</h3>
+                <p>Reklamlar için Google AdMob ve kitap detaylarını çekmek için Google Books API kullanıyoruz. Bu hizmetler, kendi politikalarına göre cihaz tanımlayıcıları ve kullanım verileri toplayabilir.</p>
+                
+                <h3>3. Veri Güvenliği</h3>
+                <p>Verileriniz yerel olarak saklandığından, cihazınız kadar güvenlidir. Sizin kontrolünüzde olan JSON dosyaları aracılığıyla manuel yedekleme/geri yükleme imkanı sunuyoruz.</p>
+            </div>
+        </section>
+
+        <!-- Terms of Use -->
+        <section id="terms" class="legal-content">
+            <div lang="en">
+                <h2>Terms of Use</h2>
+                <h3>1. Acceptance of Terms</h3>
+                <p>By using ReadNext, you agree to these terms. If you do not agree, do not use the application.</p>
+                
+                <h3>2. Use License</h3>
+                <p>We grant you a personal, non-exclusive license to use the app for personal, non-commercial reading tracking.</p>
+                
+                <h3>3. Disclaimer</h3>
+                <p>The application is provided "as is". We are not responsible for any data loss caused by device failure or accidental deletion.</p>
+            </div>
+
+            <div lang="tr">
+                <h2>Kullanım Şartları</h2>
+                <h3>1. Şartların Kabulü</h3>
+                <p>ReadNext'i kullanarak bu şartları kabul etmiş olursunuz. Kabul etmiyorsanız lütfen uygulamayı kullanmayın.</p>
+                
+                <h3>2. Kullanım Lisansı</h3>
+                <p>Size, uygulamayı kişisel, ticari olmayan kitap takibi için kullanmanız için kişisel ve münhasır olmayan bir lisans veriyoruz.</p>
+                
+                <h3>3. Sorumluluk Reddi</h3>
+                <p>Uygulama "olduğu gibi" sunulmaktadır. Cihaz arızasından veya kazara silinmeden kaynaklanan veri kayıplarından sorumlu değiliz.</p>
+            </div>
+        </section>
+
+        <footer style="text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 0.9rem;">
+            <p>© 2026 ReadNext by Baser Ai Tech. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const body = document.body;
+            const btn = document.querySelector('.lang-switch');
+            
+            if (body.classList.contains('lang-tr')) {
+                body.classList.remove('lang-tr');
+                btn.textContent = 'Switch to Türkçe';
+            } else {
+                body.classList.add('lang-tr');
+                btn.textContent = 'Switch to English';
+            }
+        }
+    </script>
+</body>
+</html>
