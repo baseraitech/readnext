@@ -17,7 +17,7 @@
                     <img src="logo.svg" alt="ReadNext Logo">
                     <span>ReadNext</span>
                 </div>
-                <button class="lang-switch" onclick="toggleLanguage()">Switch to Türkçe</button>
+                <button class="lang-switch" onclick="toggleLanguage()">TR / EN</button>
             </nav>
         </div>
     </header>
@@ -25,6 +25,9 @@
     <div class="container">
         <!-- Hero Section -->
         <section class="hero">
+            <div class="hero-image">
+                <img src="app.png" alt="ReadNext App Preview">
+            </div>
             <h1 lang="en">Read What's Next</h1>
             <h1 lang="tr">Bir Sonrakini Oku</h1>
             
@@ -51,6 +54,17 @@
                 <h3 lang="tr">PDF Dışa Aktar</h3>
                 <p lang="en">Take your list with you or share it with friends in professional PDF format.</p>
                 <p lang="tr">Listenizi yanınızda taşıyın veya profesyonel PDF formatında paylaşın.</p>
+            </div>
+        </section>
+
+        <!-- Screenshots -->
+        <section class="screenshots">
+            <h2 lang="en" style="text-align: center; color: var(--primary-color); margin-bottom: 2rem;">App Screenshots</h2>
+            <h2 lang="tr" style="text-align: center; color: var(--primary-color); margin-bottom: 2rem;">Ekran Görüntüleri</h2>
+            <div class="screenshot-grid">
+                <div class="screenshot-item"><img src="1.png" alt="ReadNext Screenshot 1"></div>
+                <div class="screenshot-item"><img src="2.png" alt="ReadNext Screenshot 2"></div>
+                <div class="screenshot-item"><img src="3.png" alt="ReadNext Screenshot 3"></div>
             </div>
         </section>
 
@@ -114,6 +128,15 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2 lang="en">Support & Contact</h2>
+            <h2 lang="tr">Destek ve İletişim</h2>
+            <p lang="en" style="color: var(--text-muted); margin-bottom: 1rem;">Have questions or feedback? Contact us:</p>
+            <p lang="tr" style="color: var(--text-muted); margin-bottom: 1rem;">Sorularınız veya geri bildirimleriniz için bize ulaşın:</p>
+            <a href="mailto:baseraitech@gmail.com" class="contact-link">baseraitech@gmail.com</a>
+        </section>
+
         <footer style="text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 0.9rem;">
             <p>© 2026 ReadNext by Baser Ai Tech. All rights reserved.</p>
         </footer>
@@ -126,10 +149,8 @@
             
             if (body.classList.contains('lang-tr')) {
                 body.classList.remove('lang-tr');
-                btn.textContent = 'Switch to Türkçe';
             } else {
                 body.classList.add('lang-tr');
-                btn.textContent = 'Switch to English';
             }
         }
     </script>
